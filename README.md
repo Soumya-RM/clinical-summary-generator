@@ -91,7 +91,7 @@ clinical-summary-generator/\
 │   │   └── __init__.py\
 │   │\
 │   └── __init__.py\
-│\
+│
 └── data/\
     ├── diagnoses.csv\
     ├── medications.csv\
