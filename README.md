@@ -23,6 +23,7 @@ Follow the steps exactly in the order below.
 
 4️⃣ Set Groq API Key (Environment Variable)
 * This application uses Groq for LLM-based clinical summarization.
+* Create your Groq API key.
 * Set your Groq API key as an environment variable:
 
       setx GROQ_API_KEY "your_groq_api_key_here"
