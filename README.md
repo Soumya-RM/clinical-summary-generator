@@ -4,9 +4,9 @@ Follow the steps exactly in the order below.
 
 1️⃣ Download the Project
 
-Download the project as a ZIP file
+    * Download the project as a ZIP file
 
-Extract it to a local directory
+    * Extract it to a local directory
 
 2️⃣ Open Command Prompt in Project Root
 
