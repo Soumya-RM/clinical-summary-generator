@@ -90,7 +90,7 @@ clinical-summary-generator/\
 │   │   ├── utils.py\
 │   │   └── __init__.py\
 │   │\
-│   └── __init__.py
+│   └── __init__.py\
 │\
 └── data/\
     ├── diagnoses.csv\
