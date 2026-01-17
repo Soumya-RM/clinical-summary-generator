@@ -56,46 +56,27 @@ Follow the steps exactly in the order below.
 ❌ Invalid patient IDs (example: 9999) will return a clear error message
 
 📁 Folder Architecture\
-clinical-summary-generator/\ 
-│\
-├── app.py\
-│   └── Streamlit frontend (UI layer)\
-│\
-├── requirements.txt\
-│   └── Python dependencies\
-│\
-├── README.md\
-│   └── Project documentation & run instructions\
-│\
-├── backend/\
-│   │\
-│   ├── main.py\
-│   │   └── FastAPI application (API layer)\
-│   │\
-│   ├── data_loader.py\
-│   │   └── CSV ingestion & patient-level data assembly\
-│   │\
-│   ├── summarizers/\
-│   │   ├── diagnoses.py\
-│   │   ├── vitals.py\
-│   │   ├── oasis.py\
-│   │   ├── wounds.py\
-│   │   ├── medications.py\
-│   │   └── __init__.py\
-│   │\
-│   ├── llm/\
-│   │   ├── client.py\
-│   │   ├── prompt.py\
-│   │   ├── composer.py\
-│   │   ├── utils.py\
-│   │   └── __init__.py\
-│   │\
-│   └── __init__.py\
-│\
-└── data/\
-    ├── diagnoses.csv\
-    ├── medications.csv\
-    ├── vitals.csv\
-    ├── wounds.csv\
-    ├── oasis.csv\
-    └── notes.csv   (intentionally not used)\
+clinical-summary-generator/
+├── app.py                  # Streamlit UI (Frontend)
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+├── backend/                # Core Logic (API Layer)
+│   ├── main.py             # FastAPI entry point
+│   ├── data_loader.py      # CSV ingestion & data assembly
+│   ├── summarizers/        # Domain-specific logic
+│   │   ├── diagnoses.py
+│   │   ├── vitals.py
+│   │   ├── oasis.py
+│   │   ├── wounds.py
+│   │   └── medications.py
+│   └── llm/                # AI Generation Layer
+│       ├── client.py       # API connection (OpenAI/Anthropic/Local)
+│       ├── prompt.py       # System & User prompt templates
+│       ├── composer.py     # Logic to stitch sections together
+│       └── utils.py        # Token counting & LLM helpers
+└── data/                   # Raw CSV Patient Data
+    ├── diagnoses.csv
+    ├── medications.csv
+    ├── vitals.csv
+    ├── wounds.csv
+    └── oasis.csv
