@@ -56,7 +56,7 @@ Follow the steps exactly in the order below.
 ❌ Invalid patient IDs (example: 9999) will return a clear error message
 
 📁 Folder Architecture\
-clinical-summary-generator/\ 
+clinical-summary-generator/
 │\
 ├── app.py\
 │   └── Streamlit frontend (UI layer)\
