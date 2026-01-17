@@ -4,8 +4,8 @@ Follow the steps below in the given order.
 ---
 1)Download ZIP
 
-2)Open CMD in Project Root
-   You should see:
+2)Open CMD in Project Root\
+   You should see:\
           app.py
           backend/
           data/
