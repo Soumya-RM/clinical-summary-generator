@@ -68,34 +68,34 @@ clinical-summary-generator/\
 │   └── Project documentation & run instructions\
 │\
 ├── backend/\
-│   │
-│   ├── main.py
-│   │   └── FastAPI application (API layer)
-│   │
-│   ├── data_loader.py
-│   │   └── CSV ingestion & patient-level data assembly
-│   │
-│   ├── summarizers/
-│   │   ├── diagnoses.py
-│   │   ├── vitals.py
-│   │   ├── oasis.py
-│   │   ├── wounds.py
-│   │   ├── medications.py
-│   │   └── __init__.py
-│   │
-│   ├── llm/
-│   │   ├── client.py
-│   │   ├── prompt.py
-│   │   ├── composer.py
-│   │   ├── utils.py
-│   │   └── __init__.py
-│   │
-│   └── __init__.py
-│
-└── data/
-    ├── diagnoses.csv
-    ├── medications.csv
-    ├── vitals.csv
-    ├── wounds.csv
-    ├── oasis.csv
-    └── notes.csv   (intentionally not used)
+│   │\
+│   ├── main.py\
+│   │   └── FastAPI application (API layer)\
+│   │\
+│   ├── data_loader.py\
+│   │   └── CSV ingestion & patient-level data assembly\
+│   │\
+│   ├── summarizers/\
+│   │   ├── diagnoses.py\
+│   │   ├── vitals.py\
+│   │   ├── oasis.py\
+│   │   ├── wounds.py\
+│   │   ├── medications.py\
+│   │   └── __init__.py\
+│   │\
+│   ├── llm/\
+│   │   ├── client.py\
+│   │   ├── prompt.py\
+│   │   ├── composer.py\
+│   │   ├── utils.py\
+│   │   └── __init__.py\
+│   │\
+│   └── __init__.py\
+│\
+└── data/\
+    ├── diagnoses.csv\
+    ├── medications.csv\
+    ├── vitals.csv\
+    ├── wounds.csv\
+    ├── oasis.csv\
+    └── notes.csv   (intentionally not used)\
